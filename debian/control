@@ -1,0 +1,11 @@
+Source: axolotl
+Maintainer: Aaron Kimmig <aaron@nanu-c.org>
+Section: misc
+Priority: optional
+Standards-Version: 0.8.1
+Build-Depends:
+
+Package: axolotl
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: a signal client
