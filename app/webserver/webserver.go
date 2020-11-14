@@ -177,7 +177,7 @@ func wsReader(conn *websocket.Conn) {
 			// catch status
 			go func() {
 				m := <-updateMessageChannel
-				go UpdateMessageHandler(m)
+				go UpdateMessageHandlerWithSource(m, sendMessageMessage.To)
 
 			}()
 
