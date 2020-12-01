@@ -70,6 +70,7 @@ func GetConfig() (*textsecure.Config, error) {
 
 	Config.LogLevel = "debug"
 	Config.AlwaysTrustPeerID = true
+	Config.Server ="http://localhost:8070"
 	rootCA := filepath.Join(ConfigDir, "rootCA.crt")
 	if helpers.Exists(rootCA) {
 		Config.RootCA = rootCA
